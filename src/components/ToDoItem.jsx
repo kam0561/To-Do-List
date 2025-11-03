@@ -12,8 +12,8 @@ function ToDoItem(props)
         })
     }
     return (
-    <div>
-        <li onClick={strike} style={{textDecoration: striked? "line-through":"none"}}>{props.text}</li>
+    <div onClick={strike}>
+        <li style={{textDecoration: striked? "line-through":"none"}}>{props.text}</li>
     </div>
         );
 }
